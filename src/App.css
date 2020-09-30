@@ -542,3 +542,96 @@ section {
     margin: 2px;
   }
 }
+
+/*===================  Media Quries for  less than 450px ==============*/
+
+@media screen and (max-width: 450px) {
+  /* Bio part */
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name,
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .name_value,
+  .email_value {
+    font-size: 1.3rem;
+  }
+
+  /* Search box */
+
+  .search_box .form {
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .form span {
+    display: block;
+    width: 50%;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  /* Image section */
+
+  .images_for_grid {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images_for_grid .img_caption img {
+    width: 17rem !important;
+    height: 22rem !important;
+  }
+
+  .images_error {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  /*---------------- canvas editing ---------------------*/
+  .main_canvas {
+    width: 667px;
+    margin: 2rem 1rem 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .canvas {
+    width: 667px;
+  }
+
+  .controls {
+    margin-top: 3rem;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+  }
+
+  .controls .shape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0.8rem;
+  }
+
+  .controls .shape div {
+    width: 40%;
+    margin: 2px;
+  }
+}
