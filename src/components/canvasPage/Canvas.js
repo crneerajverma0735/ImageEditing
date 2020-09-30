@@ -22,13 +22,7 @@ class Canvas extends Component {
     }
 
     componentDidMount() {
-        const canvas = new fabric.Canvas(this.c)
-        // canvas.setBackgroundImage(this.props.src, canvas.renderAll.bind(canvas), {
-        //     backgroundImageOpacity: 1,
-        //     backgroundImageStretch: true,
-        //     width: 650,
-        //     height: 460,
-        // })
+        const canvas = new fabric.Canvas(this.c);
 
 
         this.setState({
@@ -57,7 +51,6 @@ class Canvas extends Component {
             })
         })
         const { width, height } = this.props
-
         return (
             <Fragment>
                 <canvas ref={c => (this.c = c)}

@@ -229,3 +229,316 @@ section {
   background-color: bisque;
   cursor: pointer;
 }
+
+.error_getting_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aquamarine;
+  width: 100%;
+  display: block;
+}
+
+.error_getting_images .canvas_error {
+  font-size: 2.5rem;
+  width: 80%;
+  text-align: center;
+  margin: 2rem;
+  color: red;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.go_back_button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  padding: 0.7rem 3rem;
+  border-radius: 10px;
+}
+.go_back_button:hover {
+  background-color: white;
+  color: black;
+}
+
+/*===================  Media Quries for  less than 992px ==============*/
+
+@media screen and (max-width: 992px) {
+  /* Bio part */
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name,
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .name_value,
+  .email_value {
+    font-size: 1.3rem;
+  }
+
+  /* Search box */
+
+  .search_box .form {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .form span {
+    display: block;
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  /* Image section */
+
+  .images_for_grid {
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+  }
+
+  .images_for_grid .img_caption img {
+    width: 11rem !important;
+    height: 11rem !important;
+  }
+
+  .images_error {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  /*---------------- canvas editing ---------------------*/
+  .main_canvas {
+    width: 667px;
+    margin: 2rem auto 2rem auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .canvas {
+    width: 667px;
+  }
+
+  .controls {
+    margin-top: 3rem;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+  }
+
+  .controls .shape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0.8rem;
+  }
+
+  .controls .shape div {
+    width: 40%;
+    margin: 2px;
+  }
+}
+
+/*===================  Media Quries for  less than 768px ==============*/
+
+@media screen and (max-width: 768px) {
+  /* Bio part */
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name,
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .name_value,
+  .email_value {
+    font-size: 1.3rem;
+  }
+
+  /* Search box */
+
+  .search_box .form {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .form span {
+    display: block;
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  /* Image section */
+
+  .images_for_grid {
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
+
+  .images_for_grid .img_caption img {
+    width: 13rem !important;
+    height: 13rem !important;
+  }
+
+  .images_error {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  /*---------------- canvas editing ---------------------*/
+  .main_canvas {
+    width: 667px;
+    margin: 2rem 1rem 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .canvas {
+    width: 667px;
+  }
+
+  .controls {
+    margin-top: 3rem;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+  }
+
+  .controls .shape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0.8rem;
+  }
+
+  .controls .shape div {
+    width: 40%;
+    margin: 2px;
+  }
+}
+
+/*===================  Media Quries for  less than 576px ==============*/
+
+@media screen and (max-width: 575px) {
+  /* Bio part */
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name,
+  .email {
+    font-size: 1.5rem;
+  }
+
+  .name_value,
+  .email_value {
+    font-size: 1.3rem;
+  }
+
+  /* Search box */
+
+  .search_box .form {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .form span {
+    display: block;
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  /* Image section */
+
+  .images_for_grid {
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .images_for_grid .img_caption img {
+    width: 22rem !important;
+    height: 25rem !important;
+  }
+
+  .images_error {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  /*---------------- canvas editing ---------------------*/
+  .main_canvas {
+    width: 667px;
+    margin: 2rem 1rem 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .canvas {
+    width: 667px;
+  }
+
+  .controls {
+    margin-top: 3rem;
+    width: 70%;
+    height: 35rem;
+    border: 1px solid black;
+  }
+
+  .controls .shape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0.8rem;
+  }
+
+  .controls .shape div {
+    width: 40%;
+    margin: 2px;
+  }
+}
